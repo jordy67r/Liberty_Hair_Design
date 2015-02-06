@@ -1,0 +1,1684 @@
+/* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
+/**
+ * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
+ * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
+ * body `font-size` is set using `em` units.
+ */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  *display: inline;
+  *zoom: 1;
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+blockquote {
+  margin: 1.5em 40px;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
+}
+
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+p,
+pre {
+  margin: 1.5em 0;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+  /* Improve image quality when scaled in IE 7. */
+  -ms-interpolation-mode: bicubic;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1.5em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Address `font-family` inconsistency between `textarea` and other form in IE 7
+ * 5. Improve appearance and consistency with IE 6/7.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  *font-family: sans-serif;
+  /* 4 */
+  *vertical-align: middle;
+  /* 5 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 0.4625em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 0.9125em;
+  border-left-width: 0.0625em;
+  border-left-style: solid;
+  padding-left: 0.875em;
+  border-right-width: 0.0625em;
+  border-right-style: solid;
+  padding-right: 0.875em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+shadow, .hairdresser1, .hairdresser2, .hairdresser5, .haircutting, .products, #map-canvas {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+}
+
+body {
+  font-family: "proxima-nova";
+  background-color: #EDE8E8;
+}
+
+.head-container {
+  background: url(../img/main-background.png) no-repeat center !important;
+  -webkit-backround-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 600px;
+  color: #fff;
+}
+
+.headcontact {
+  float: left;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+.headcontact p {
+  padding: 0 0 0 40px;
+}
+.headcontact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.head-address {
+  display: none;
+}
+
+.logo {
+  clear: both;
+  text-align: center;
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  margin: 88px 0 0 -37.5%;
+}
+.logo img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 100px auto 0;
+  width: 200px;
+}
+
+.subhead {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  margin: 424px 0 0 -37.5%;
+}
+.subhead h2 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.navigation {
+  display: none;
+}
+
+.scroll {
+  display: none;
+}
+
+#scrollbounce {
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 75px -38.5px;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: bounce 1s 5;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 5px;
+  }
+  25%, 75% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.background {
+  background-color: #EDE8E8;
+  position: relative;
+  margin: -40px 0 0;
+}
+
+.menu-button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  float: right;
+}
+
+.menu-bar {
+  width: 2.6rem;
+  height: 0.125rem;
+  background: #fff;
+  margin-bottom: 0.125rem;
+}
+.menu-bar.black {
+  background: #000;
+}
+.menu-bar.men-2 {
+  margin: 0.3rem 0;
+}
+
+.menu-container {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  right: 50%;
+  margin: 0 -125px 0 0;
+  background-color: #000;
+  padding: 40px 0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  transition: 0.8s;
+}
+
+.display {
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+.menu-list li {
+  padding: 5px 10px;
+  width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu-list a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-list a:hover {
+  color: #f6b900;
+}
+
+.blurb-container {
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+#blurb {
+  text-align: center;
+  margin: 0 0 40px;
+}
+#blurb h1 {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.875);
+  font-weight: 100;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  line-height: 3rem;
+  padding: 90px 0 0;
+}
+#blurb p {
+  width: 320px;
+  margin: 0 auto;
+  line-height: 1.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.88rem;
+}
+
+.services-container {
+  padding: 1rem 2em 0;
+  box-sizing: border-box;
+}
+
+#services {
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.service {
+  font-family: serif;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.stylists-container {
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+.section-heading {
+  text-align: center;
+  clear: both;
+}
+.section-heading .heading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin: 0px 0 -30px;
+  padding: 60px 0 0;
+}
+.section-heading p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: serif;
+  margin-bottom: 2.5rem;
+}
+
+#stylists {
+  text-align: center;
+}
+#stylists .heading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin: 0px 0 -30px;
+  padding: 60px 0 0;
+}
+#stylists p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: serif;
+  margin-bottom: 2.5rem;
+}
+
+.hairdresser1 {
+  background-color: #fff;
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.hairdresser1 img {
+  margin: 20px 0 0;
+  height: 75px;
+  width: 75px;
+}
+.hairdresser1 h2 {
+  background: #000;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+.hairdresser1 p {
+  padding: 1rem 2.5rem 2.5rem;
+  box-sizing: border-box;
+  font-family: serif;
+  font-size: 0.85rem;
+  line-height: 1.75rem;
+}
+
+.hairdresser2 {
+  background-color: #fff;
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.hairdresser2 img {
+  margin: 20px 0 0;
+  height: 75px;
+  width: 75px;
+}
+.hairdresser2 h2 {
+  background: #000;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+.hairdresser2 p {
+  padding: 1rem 2.5rem 2.5rem;
+  box-sizing: border-box;
+  font-family: serif;
+  font-size: 0.85rem;
+  line-height: 1.75rem;
+}
+
+.hairdresser5 {
+  background-color: #fff;
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 2px;
+  clear: both;
+}
+.hairdresser5 img {
+  margin: 20px 0 0;
+  height: 75px;
+  width: 75px;
+}
+.hairdresser5 h2 {
+  background: #000;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+.hairdresser5 p {
+  padding: 1rem 2.5rem 2.5rem;
+  box-sizing: border-box;
+  font-family: serif;
+  font-size: 0.85rem;
+  line-height: 1.75rem;
+}
+
+.haircutting-container {
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+.haircutting {
+  font-weight: 400;
+  margin: 0 auto;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.haircutting .options tr {
+  text-transform: uppercase;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.haircutting .options tr td {
+  padding: 0 10px;
+}
+.haircutting h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+}
+.haircutting h4 {
+  font-weight: 400;
+}
+.haircutting #tint-serv {
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.haircutting p {
+  clear: both;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #938080;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0 0;
+}
+
+.treatment {
+  text-align: left;
+  border-spacing: 10px;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.treatment td {
+  padding: 0 10px;
+}
+
+.columnright {
+  text-align: right;
+}
+
+.treatment {
+  text-align: left;
+  border-spacing: 10px;
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.treatment td {
+  padding: 0 10px;
+}
+
+.products-container {
+  padding: 0 2em;
+}
+
+.products {
+  margin: 40px auto 0;
+  width: 320px;
+  padding: 10px 0 30px;
+  background-color: #fff;
+  font-weight: 400;
+  border-radius: 2px;
+}
+.products h3 {
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+  text-align: center;
+}
+.products table {
+  padding: 10px;
+  text-align: left;
+  line-height: 2rem;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+.products table tr td {
+  padding: 0 10px;
+}
+
+.section3-container {
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+.grid-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opentime-container {
+  padding-top: 39px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 300px;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f6b900;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+}
+
+.opentimes {
+  margin: 0 auto;
+  color: black;
+  text-align: left;
+  border-spacing: 10px;
+  border-radius: 2px 2px 0 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.opentimes tr {
+  height: 32px;
+}
+.opentimes td {
+  padding: 0 30px;
+  height: 32px;
+}
+
+.address {
+  margin: auto;
+  border-radius: 0 0 2px 2px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+.address tr td {
+  list-style: none;
+  color: #FFDA00;
+  text-align: center;
+}
+.address tr td a {
+  color: inherit;
+  text-decoration: none;
+}
+.address tr td a:hover {
+  cursor: default;
+}
+
+.address-container {
+  padding-top: 21px;
+  box-sizing: border-box;
+  width: 320px;
+  height: 300px;
+  margin: 40px auto 0;
+  background-color: #000;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+}
+
+.findus {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 0 40px;
+  border-radius: 52px;
+  z-index: 1;
+}
+
+#map-canvas {
+  width: 320px;
+  border-radius: 2px;
+  height: 300px;
+  margin: 40px 0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1px 0 0 0;
+  z-index: 1;
+}
+
+a[href^="http://maps.google.com/maps"] {
+  display: none !important;
+}
+
+.gmnoprint a, .gmnoprint span {
+  display: none;
+}
+
+.gmnoprint div {
+  background: none !important;
+}
+
+#map-report a img {
+  display: none;
+}
+
+.gm-style-cc {
+  display: none;
+}
+
+.tall-picture {
+  display: none;
+}
+
+.center-picture {
+  display: none;
+}
+
+.low-picture {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  margin: 40px 0 0;
+  clear: both;
+}
+.footer img {
+  opacity: 0.6;
+}
+.footer p {
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  padding: 1rem 0 3rem;
+}
+
+.jumpbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: 2%;
+  top: 40%;
+  display: none;
+}
+
+.jumpbar li {
+  display: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(50, 30, 50, 0.4);
+  margin: 20px 0;
+}
+
+.jumpbar li:hover {
+  background-color: rgba(60, 60, 80, 0.6);
+}
+
+.jumpbar li:active {
+  background-color: rgba(60, 60, 80, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .head-address {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    padding: 0 40px 0;
+  }
+
+  #blurb p {
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  #services {
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  .cutting {
+    float: left;
+    width: 320px;
+  }
+
+  .tinting {
+    float: right;
+    width: 320px;
+  }
+
+  .styling {
+    clear: both;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .hairdresser-container {
+    padding: 0 2em;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 744px;
+    margin: 0 auto;
+  }
+
+  .hairdresser1 {
+    margin: 0 20px 40px 0;
+    float: left;
+  }
+  .hairdresser1 p {
+    height: 191px;
+  }
+
+  .hairdresser2 {
+    margin: 0 0 40px 20px;
+    float: left;
+  }
+  .hairdresser2 p {
+    height: 192px;
+  }
+
+  .haircutting {
+    clear: both;
+    height: 560px;
+    width: 648px;
+    padding: 10px 40px 40px;
+  }
+
+  .hair-left {
+    float: left;
+    width: 50%;
+  }
+  .hair-left p {
+    display: none;
+  }
+
+  .options {
+    float: left;
+    width: 100%;
+  }
+
+  .treatment {
+    float: right;
+    width: 49%;
+  }
+
+  .products {
+    width: 648px;
+    height: 350px;
+    padding: 10px 40px 40px;
+  }
+
+  .tableleft {
+    float: left;
+    width: 45%;
+  }
+
+  .tableright {
+    float: right;
+    width: 45%;
+  }
+
+  .grid-list {
+    margin: 40px auto 0;
+    width: 689px;
+  }
+
+  .findus {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  #map-canvas {
+    height: 632px;
+  }
+
+  .center-picture {
+    display: none;
+    margin: 332px 0px 0px -320px;
+    float: left;
+    width: 320px;
+    height: 300px;
+    position: relative;
+  }
+  .center-picture img {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    width: 320px;
+    height: 300px;
+  }
+
+  .opentime-container {
+    margin: 0px 0 0 369px;
+    border-radius: 2px;
+  }
+
+  .address {
+    border-radius: 2px;
+  }
+
+  .address-container {
+    margin: 38px 0 0 368px;
+  }
+
+  .jumpbar, .menu-button, .menu-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .head-container {
+    height: 1000px;
+    background-position: 50% 50%;
+    background: url(../img/main-background.png) no-repeat center fixed !important;
+  }
+
+  .head-address {
+    display: block;
+    float: right;
+  }
+
+  .subhead {
+    position: fixed;
+  }
+  .subhead h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 200;
+  }
+
+  .headcontact {
+    font-size: 1.125rem;
+    position: fixed;
+    line-height: 2.8rem;
+  }
+
+  .head-address {
+    font-size: 1.3rem;
+    position: fixed;
+  }
+
+  .navigation {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+  }
+
+  .navlist {
+    display: inline-block;
+    margin: 600px 0 0;
+    padding: 0;
+  }
+  .navlist li {
+    float: left;
+    padding: 15px 0;
+    width: 140px;
+    list-style: none;
+    background-color: #000;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .navlist li a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+  .navlist li a:hover {
+    color: #f6b900;
+  }
+
+  .logo {
+    margin: 135px 0 0 -37.5%;
+    position: fixed;
+  }
+  .logo img {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .scroll {
+    display: block;
+    margin: 240px 0 0;
+  }
+
+  #blurb p {
+    width: 982px;
+  }
+
+  #services {
+    height: 100px;
+    width: 982px;
+  }
+
+  .cutting {
+    float: left;
+    width: 25%;
+    margin: 0 5.25%;
+  }
+
+  .tinting {
+    float: left;
+    width: 25%;
+    margin: 0 2%;
+  }
+
+  .styling {
+    float: left;
+    width: 25%;
+    margin: 0 5.25%;
+    clear: none;
+  }
+
+  .stylists {
+    clear: both;
+  }
+
+  .hairdresser-container {
+    width: 974px;
+    margin: 0 auto;
+  }
+
+  .hairdresser1 {
+    width: 320px;
+    float: left;
+    margin: 0 0 40px 10%;
+  }
+  .hairdresser1 p {
+    height: 192px;
+  }
+
+  .hairdresser2 {
+    width: 320px;
+    float: right;
+    margin: 0 10% 40px 0;
+  }
+  .hairdresser2 p {
+    height: 192px;
+  }
+
+  .haircutting-container {
+    clear: both;
+  }
+
+  .haircutting {
+    height: 585px;
+    width: 648px;
+    padding: 10px 40px 40px;
+  }
+
+  .hair-left {
+    float: left;
+    width: 50%;
+  }
+  .hair-left p {
+    display: none;
+  }
+
+  .options {
+    float: left;
+    width: 100%;
+  }
+
+  .tint-table {
+    float: right;
+    width: 50%;
+  }
+
+  .treatment {
+    width: 90%;
+  }
+
+  .section3 {
+    clear: both;
+  }
+
+  .grid-list {
+    margin: 20px auto 0;
+    width: 980px;
+  }
+
+  .findus {
+    float: left;
+    margin: 0 5px 10px 0;
+    padding: 0;
+  }
+
+  #map-canvas {
+    width: 680px;
+    margin: 0 5px 10px 0;
+    height: 300px;
+  }
+
+  .tall-picture {
+    display: block;
+    float: right;
+    margin: 0 5px 10px 5px;
+  }
+  .tall-picture img {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+  }
+
+  .opentime-container {
+    border-radius: 2px;
+    float: left;
+    margin: -666px 0 0 0;
+  }
+
+  .center-picture {
+    display: block;
+    float: left;
+    margin: 44px 0 0 360px;
+    position: relative;
+    width: 320px;
+    height: 300px;
+  }
+  .center-picture img {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    width: 320px;
+    height: 300px;
+  }
+
+  .address-container {
+    margin: 0;
+    border-radius: 2px;
+    float: right;
+    margin: -317px 5px 0 0px;
+  }
+
+  .low-picture {
+    display: block;
+    padding: 10px 10px;
+  }
+  .low-picture img {
+    margin: 53px 0px 0px -10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+  }
+
+  .footer {
+    clear: both;
+  }
+
+  .jumpbar {
+    display: block;
+  }
+
+  .jumpbar li {
+    display: block;
+  }
+
+  .menu-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .hairdresser-container {
+    width: 1398px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hairdresser1 {
+    float: none;
+    margin: 0 2% 40px;
+    width: 280px;
+  }
+
+  .hairdresser2 {
+    float: none;
+    margin: 0 2% 40px;
+    width: 280px;
+  }
+
+  .hairdresser5 {
+    width: 280px;
+    margin: 0 2% 40px;
+    clear: none;
+    float: left;
+  }
+  .hairdresser5 p {
+    height: 192px;
+  }
+
+  .dresser4 {
+    clear: both;
+    float: left;
+  }
+
+  .dresser0 {
+    float: left;
+    padding: 0 0 20px;
+  }
+
+  .profile-wrapper {
+    margin: 0 auto;
+    width: 960px;
+  }
+
+  .lower-profile-wrapper {
+    margin: 0 auto;
+    width: 615px;
+  }
+
+  .haircutting {
+    width: 1200px;
+    padding: 10px 40px 60px;
+  }
+  .haircutting #tint-serv {
+    font-weight: 200;
+  }
+  .haircutting h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .products {
+    width: 1000px;
+    padding: 10px 140px 60px;
+  }
+  .products h3 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  .treatment {
+    width: 70%;
+    margin: 0 94px 0 0;
+  }
+
+  .options {
+    width: 70%;
+    margin: 0 0 0 94px;
+  }
+
+  .tableright {
+    width: 40%;
+    margin: 0 40px 0 0;
+  }
+
+  .tableleft {
+    width: 40%;
+    margin: 0 0 0 40px;
+  }
+}
+@media screen and (max-height: 780px) {
+  .head-container {
+    background: url(../img/main-background.png) no-repeat center !important;
+    height: 780px;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+  }
+  .logo img {
+    margin: 50px auto 0;
+  }
+
+  .subhead {
+    position: absolute;
+  }
+
+  .navigation {
+    position: absolute;
+  }
+
+  .headcontact {
+    position: absolute;
+  }
+
+  .head-address {
+    position: absolute;
+  }
+}
+@media screen and (max-height: 660px) {
+  .navigation {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

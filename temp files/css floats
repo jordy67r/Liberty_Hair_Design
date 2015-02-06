@@ -1,0 +1,29 @@
+	#map-canvas {
+	float: left;
+	width: 70%;
+	height: 300px;
+	margin: 40px 0;
+	}
+	.tall-picture {
+		display: block;
+		float: right;
+	}
+	.opentime-container {
+		float: left;
+	}
+	.center-picture {
+		display: block;
+
+	}
+	.bottom-picture {
+		display: block;
+
+	}
+	.address {
+		display: block;
+		float: right;
+	}
+
+	.footer {
+		clear: both;
+	}

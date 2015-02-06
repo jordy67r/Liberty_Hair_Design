@@ -1,0 +1,1059 @@
+@import 'normalize.scss';
+@import 'variables';
+
+
+body {
+	font-family: "proxima-nova";
+	background-color: #EDE8E8;
+}
+.head-container {
+	background: url(../img/main-background.png) no-repeat center !important;
+	-webkit-backround-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	width: 100%;
+	height: 600px;
+	color: #fff;
+}
+.headcontact {
+	float: left;
+	text-transform: uppercase;
+	position: absolute;
+	font-size: 0.8rem;
+	line-height: 1.8rem;
+	font-weight: 300;
+	p {
+		padding: 0 0 0 40px;
+	}
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+} 
+//To not appear on mobile--
+.head-address {
+	display: none;
+}
+//--
+.logo {
+	clear: both;
+	text-align: center; 
+	width: 75%;
+	position: absolute;
+	left: 50%;
+	margin: 88px 0 0 -37.5%; 
+	img {
+		max-width: 200px;
+		max-height: 200px;
+		margin: 100px auto 0;
+		width: 200px;
+	} 
+}
+.subhead {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	width: 75%;
+	position: absolute;
+	left: 50%;
+	margin: 424px 0 0 -37.5%;
+	h2 {
+		font-size: 1.5rem;
+		letter-spacing: 3px;
+		font-weight: 200;
+		margin-top: 0;
+	}
+}
+//To not appear on mobile--
+.navigation {
+	display: none;
+}
+.scroll {
+	display: none;
+}
+#scrollbounce {
+  position:fixed;
+  bottom:0;
+	margin: 0 0 75px -38.5px;
+	left: 50%;
+  height:50px;
+  width:50px;
+  -webkit-animation: bounce 1s 5;
+}
+@-webkit-keyframes bounce {
+  0%	{ 
+  	bottom:5px; 
+  }
+  25%, 75% { 
+  	bottom:15px; 
+  }
+  50%	{ 
+  	bottom:20px; 
+  }
+  100%	{
+   bottom:0; 
+  }
+}
+//--
+.background {
+	background-color: #EDE8E8;
+	position: relative;
+	margin: -40px 0 0;
+}
+.menu-button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  float: right;
+}
+.menu-bar {
+  width: 2.6rem;
+  height: 0.125rem;
+  background: #fff;
+  margin-bottom: 0.125rem;
+  &.black {
+    background: #000;
+  }
+  &.men-2 {
+    margin: 0.3rem 0;
+  }
+}
+.menu-container {
+	position: fixed;
+	top: 60px;
+	right: 20px;
+	right: 50%;
+	margin: 0 -125px 0 0;
+	background-color: #000;
+	padding: 40px 0;
+	border-radius: 2px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+	z-index: 100;
+	transition: 0.8s;
+}
+//For displaying the mobile menu--
+.display {
+	opacity: 0;
+	transition: 0.8s;
+}
+//--
+.menu-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	z-index: 100;
+	li {
+		
+		padding: 5px 10px;
+		width: 250px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+	a:hover {
+		color: #f6b900;
+	}
+}
+.blurb-container {
+	padding: 0 2em;
+	box-sizing: border-box;
+}
+#blurb {
+	text-align: center;
+	margin: 0 0 40px;
+		h1 {
+			font-size: 2.5rem;
+			color: rgba(0, 0, 0, 0.875);
+			font-weight: 100;
+			text-transform: uppercase;
+			text-transform: uppercase;
+			line-height: 3rem;
+			padding: 90px 0 0;
+		}
+		p {
+			width: 320px;
+			margin: 0 auto;
+			line-height: 1.75rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-size: 0.88rem;
+		}
+}
+.services-container {
+	padding: 1rem 2em 0;
+	box-sizing: border-box;
+}
+#services {
+	text-align: center;
+	width: 320px;
+	margin: 0 auto;
+}
+.service {
+	font-family: serif;
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.5);
+}
+.stylists-container {
+	padding: 0 2em;
+	box-sizing: border-box;
+}
+.section-heading {
+	text-align: center;
+	clear: both;
+	.heading {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 200;
+	font-size: 2.5rem;
+	margin: 0px 0 -30px;
+	padding: 60px 0 0;
+	}
+	p {
+		color: rgba(0, 0, 0, 0.5);
+		font-family: serif;
+		margin-bottom: 2.5rem;
+	}
+}
+#stylists {
+	text-align: center;
+	.heading {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 200;
+	font-size: 2.5rem;
+	margin: 0px 0 -30px;
+	padding: 60px 0 0;
+	}
+	p {
+		color: rgba(0, 0, 0, 0.5);
+		font-family: serif;
+		margin-bottom: 2.5rem;
+	}
+}
+.hairdresser1 {
+	@extend shadow;
+	background-color: $boxcolor;
+	width: 320px;
+	margin: 0 auto;
+	border-radius: 2px;
+		img {
+			margin: 20px 0 0;
+			height:75px;
+			width:75px;
+		}
+		h2 {
+			background: #000;
+			font-weight: 600;
+			font-size: 0.875rem;
+			color: #fff;
+			letter-spacing: 3px;
+			line-height: 2.5rem;
+			text-transform: uppercase;
+		}
+		p {
+		padding: 1rem 2.5rem 2.5rem;
+		box-sizing: border-box;
+		font-family: serif;
+		font-size: 0.85rem;
+		line-height: 1.75rem;
+	}
+}
+.hairdresser2 {
+	background-color: $boxcolor;
+	width: 320px;
+	margin: 0 auto;
+	border-radius: 2px;
+	@extend shadow;
+		img {
+			margin: 20px 0 0;
+			height:75px;
+			width:75px;
+		}
+		h2 {
+			background: #000;
+			font-weight: 600;
+			font-size: 0.875rem;
+			color: #fff;
+			letter-spacing: 3px;
+			line-height: 2.5rem;
+			text-transform: uppercase;
+		}
+		p {
+		padding: 1rem 2.5rem 2.5rem;
+		box-sizing: border-box;
+		font-family: serif;
+		font-size: 0.85rem;
+		line-height: 1.75rem;
+	}
+}
+.hairdresser5 {
+	background-color: $boxcolor;
+	width: 320px;
+	margin: 0 auto;
+	border-radius: 2px;
+	clear: both;
+	@extend shadow;
+		img {
+			margin: 20px 0 0;
+			height:75px;
+			width:75px;
+		}
+		h2 {
+			background: #000;
+			font-weight: 600;
+			font-size: 0.875rem;
+			color: #fff;
+			letter-spacing: 3px;
+			line-height: 2.5rem;
+			text-transform: uppercase;
+		}
+		p {
+		padding: 1rem 2.5rem 2.5rem;
+		box-sizing: border-box;
+		font-family: serif;
+		font-size: 0.85rem;
+		line-height: 1.75rem;
+	}
+}
+.haircutting-container {
+	padding: 0 2em;
+	box-sizing: border-box;
+}
+.haircutting {
+	font-weight: 400;
+	margin: 0 auto;
+	width: 280px;
+	background-color: $boxcolor;
+	border-radius: 2px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	@extend shadow;
+	.options {
+		tr {
+			text-transform: uppercase;
+			line-height: 2rem;
+			font-weight: 300;
+			font-size: 0.8rem;
+			text-align: left;
+			td {
+				padding: 0 10px;
+			}
+		}
+	}
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 200;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	h4 {
+		font-weight: 400;
+	}
+	#tint-serv {
+		letter-spacing: 2px;
+		font-weight: 300;
+	}
+	p {
+		clear: both;
+		text-align: center;
+		font-size: 1rem;
+		font-weight: 400;
+		color: #938080;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 20px 0 0;
+	}
+}
+.treatment {
+	text-align: left;
+	border-spacing: 10px;
+	line-height: 2rem;
+	font-weight: 300;
+	font-size: 0.8rem;
+	td {
+		padding: 0 10px;
+	}
+}
+.columnright {
+ 	text-align: right;
+ }
+.treatment {
+	text-align: left;
+	border-spacing: 10px;
+	line-height: 2rem;
+	font-weight: 300;
+	font-size: 0.8rem;
+	td {
+		padding: 0 10px;
+	}
+}
+.products-container {
+	padding: 0 2em;
+}
+.products {
+	margin: 40px auto 0;
+	width: 320px;
+	padding: 10px 0 30px;
+	background-color: $boxcolor;
+	font-weight: 400;
+	border-radius: 2px;
+	@extend shadow;
+	h3 {
+		letter-spacing: 2px;
+		font-weight: 300;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		line-height: 2rem;
+		text-align: center;
+	}
+	table {
+		padding: 10px;
+		text-align: left;
+		line-height: 2rem;
+		font-size: 0.8rem;
+		margin: 0 auto;
+		tr {
+			td{
+				padding: 0 10px;
+			}
+		}
+	}
+}
+
+.section3-container {
+	padding: 0 2em;
+	box-sizing: border-box;
+}
+.grid-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.opentime-container {
+	padding-top: 39px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 300px;
+	width: 320px;
+	margin: 0 auto;
+	background-color: #f6b900;
+	box-shadow: $shadow;
+}
+.opentimes {
+	margin: 0 auto;
+	color: black;
+	text-align: left;
+	border-spacing: 10px;
+	border-radius: 2px 2px 0 0;
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	line-height: 2rem;
+	tr {
+		height:32px;
+	}
+	td {
+		padding: 0 30px;
+		height: 32px;
+	}
+}
+.address {
+	margin: auto;
+	border-radius: 0 0 2px 2px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	line-height: 2rem;
+	tr td {
+		list-style: none;
+		color: #FFDA00;
+		text-align: center;
+		a{
+			color: inherit;
+			text-decoration: none;
+		}	
+		a:hover {
+			cursor: default;
+		}
+	}
+}
+.address-container {
+	padding-top: 21px;
+	box-sizing: border-box;
+	width: 320px;
+	height: 300px;
+	margin: 40px auto 0;
+	background-color: #000;
+	box-shadow: $shadow;
+}
+//Map container and options
+.findus {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0 0 40px;
+	border-radius: 52px;
+	z-index: 1;
+}
+#map-canvas {
+	width: 320px;
+	border-radius: 2px;
+	height: 300px;
+	margin: 40px 0;
+	text-align: center;
+	margin: 0 auto;
+	padding: 1px 0 0 0;
+	@extend shadow;
+	z-index: 1;
+}
+a[href^="http://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+#map-report a img { 
+	display:none; 
+} 
+.gm-style-cc { 
+	display:none; 
+}
+//--
+//To not appear on mobile -- 
+.tall-picture {
+	display: none;
+}
+.center-picture {
+	display: none;
+}
+.low-picture {
+	display: none;
+}
+//--
+.footer {
+	text-align: center;
+	margin: 40px 0 0;
+	clear: both;
+	img {
+		opacity: 0.6;
+	}
+	p {
+		color: rgba(0,0,0,0.4);
+		letter-spacing: 1px;
+		font-size: 0.75rem;
+		padding: 1rem 0 3rem;
+	}
+}
+//To not appear on mobile--
+.jumpbar {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	right: 2%;
+	top: 40%;
+	display: none;
+}
+.jumpbar li{
+	display: none;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid rgba(50, 30, 50, 0.4);
+	margin: 20px 0;
+}
+.jumpbar li:hover {
+	background-color: rgba(60, 60, 80, 0.6);
+}
+.jumpbar li:active {
+	background-color: rgba(60, 60, 80, 0.6);
+}
+//--
+@media screen and (min-width:768px) {
+	//Show and style adress in head--
+	.head-address {
+		display: block;
+		float: right;
+		position: absolute;
+		right: 0;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		line-height: 1.8rem;
+		font-weight: 300;
+		padding: 0 40px 0;
+	}
+	//--
+	#blurb p {
+		width: 688px;
+		margin: 0 auto;
+	}
+	#services {
+		width: 688px;
+		margin: 0 auto;
+	}
+	.cutting {
+		float: left;
+		width: 320px
+	}
+	.tinting {
+		float: right;
+		width: 320px;
+	}
+	.styling {
+		clear: both;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.hairdresser-container {
+		padding: 0 2em;
+		box-sizing: border-box;
+		display: inline-block;
+		width: 744px;
+		margin: 0 auto;
+	}
+	.hairdresser1 {
+		margin: 0 20px 40px 0;
+		float: left;
+		p {
+			height: 191px;
+		}
+	}
+	.hairdresser2 {
+		margin: 0 0 40px 20px;
+		float: left;
+		p {
+			height: 192px;
+		}
+	}
+	.haircutting {
+		clear:both;
+		height: 560px;
+		width: 648px;
+		padding: 10px 40px 40px;
+	}
+	.hair-left {
+		float: left;
+		width: 50%;
+		p {
+			display: none;
+		}
+	}
+	.options {
+		float: left;
+		width: 100%;
+	}
+	.treatment {
+		float: right;
+		width: 49%;
+	}
+	.products {
+		width: 648px;
+		height: 350px;
+		padding: 10px 40px 40px;
+	}
+	.tableleft {
+		float: left;
+		width: 45%;
+	}
+	.tableright {
+		float: right;
+		width: 45%;
+	}
+	//Grid Display--
+	.grid-list {
+		margin: 40px auto 0;
+		width: 689px;
+	}
+	//Map position and size, made tall for tablet--
+	.findus {
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	#map-canvas {
+		height: 632px;
+	}
+	//--
+	.center-picture {
+		display: none;
+		margin: 332px 0px 0px -320px;
+		float: left;
+		width: 320px;
+		height: 300px;
+		position: relative;
+		img {
+			box-shadow: $shadow;
+			border-radius: 2px;
+			width: 320px;
+			height: 300px;
+		}
+	}
+	.opentime-container {
+		margin: 0px 0 0 369px;
+		border-radius: 2px;
+	}
+	.address {
+		border-radius: 2px;
+	}
+	.address-container {
+		margin: 38px 0 0 368px;
+	}
+	//--
+	//Jump bar disabled on tablet--
+	.jumpbar, .menu-button, .menu-container {
+		display: none;
+	}
+}
+@media screen and (min-width: 1090px) {
+	.head-container {
+		height: 1000px;
+		background-position: 50% 50%;
+		background: url(../img/main-background.png) no-repeat center fixed !important;
+	}
+	.head-address {
+	display: block;
+	float: right;
+	}
+	.subhead {
+		position: fixed;
+		h1 {
+			font-size: 2.5rem;
+			letter-spacing: 3px;
+			font-weight: 200;
+		}
+	}
+	.headcontact {
+		font-size: 1.125rem;
+		position: fixed;
+		line-height: 2.8rem;
+	}
+	.head-address {
+		font-size: 1.3rem;
+		position: fixed;
+	}
+	//Head bar navigation--
+	.navigation {
+		display: block;
+		width: 100%;
+		text-align: center;
+		position: fixed;
+	}
+	.navlist {
+		display: inline-block;
+		margin: 600px 0 0;
+		padding: 0;
+		li{
+			float: left;
+			padding: 15px 0;
+			width: 140px;
+			list-style: none;
+			background-color: #000;
+			letter-spacing: 2px;
+			font-size: 0.875rem;
+			font-weight: 600;
+			a {
+				text-decoration: none;
+				color: inherit;
+				text-transform: uppercase;
+			}
+			a:hover {
+				color: #f6b900;
+			}
+		}
+	}
+	//--
+	.logo {
+		margin: 135px 0 0 -37.5%;
+		position: fixed;
+		img {
+			max-width: 500px;
+			max-height: 500px;
+		}
+	}
+	.scroll {
+	display: block;
+	margin: 240px 0 0;
+  }
+  #blurb {
+  	p {
+  		width: 982px;
+  	}
+  }
+	#services {
+		height: 100px;
+		width: 982px;
+	}
+	.cutting {
+		float: left;
+		width: 25%;
+		margin: 0 5.25%;
+	}
+	.tinting {
+		float:left;
+		width: 25%;
+		margin: 0 2%;
+	}
+	.styling {
+		float: left;
+		width: 25%;
+		margin: 0 5.25%;
+		clear: none;
+	}
+	.stylists {
+		clear: both;
+	}
+	.hairdresser-container {
+		width: 974px;
+		margin: 0 auto;
+	}
+	.hairdresser1 {
+		width: 320px;
+		float: left;
+		margin: 0 0 40px 10%;
+		p {
+			height: 192px;
+		}
+	}
+	.hairdresser2 {
+		width: 320px;
+		float: right;
+		margin: 0 10% 40px 0;
+		p {
+			height: 192px;
+		}
+	}
+	.haircutting-container{
+		clear: both;
+	}
+	//To Float Left--
+	.haircutting {
+		height: 585px;
+		width: 648px;
+		padding: 10px 40px 40px;
+	}
+	.hair-left {
+		float: left;
+		width: 50%;
+		p {
+			display: none;
+		}
+	}
+	.options {
+		float: left;
+		width: 100%;
+	}
+	//--
+	//To Float Right--
+	.tint-table {
+		float: right;
+		width: 50%;
+	}
+	.treatment {
+		width: 90%;
+	}
+	//--
+	.section3 {
+		clear: both;
+	}
+	//Salon Floating space--
+	.grid-list {
+		margin: 20px auto 0;
+		width: 980px;
+	}
+	//--
+	//Map position and size within grid--
+	.findus {
+		float: left;
+		margin: 0 5px 10px 0;
+		padding: 0;
+	}
+	#map-canvas {
+		width: 680px;
+		margin: 0 5px 10px 0;
+		height: 300px;
+	}
+	//--
+	.tall-picture {
+			display: block;
+			float: right;
+			margin: 0 5px 10px 5px;
+			img {
+				box-shadow: $shadow;
+				border-radius: 2px;
+			}
+	}
+	.opentime-container {
+		border-radius: 2px;
+		float:left;
+		margin: -666px 0 0 0;
+	}
+	.center-picture {
+		display: block;
+		float: left;
+		margin: 44px 0 0 360px;
+		position: relative;
+		width: 320px;
+		height: 300px;
+		img {
+			box-shadow: $shadow;
+			border-radius: 2px;
+			width: 320px;
+			height: 300px;
+		}
+	}
+	.address-container {
+		margin: 0;
+		border-radius: 2px;
+		float: right; 
+		margin: -317px 5px 0 0px;
+	}
+	.low-picture {
+		display: block;
+		padding: 10px 10px;
+		img {
+			margin: 53px 0px 0px -10px;
+			box-shadow: $shadow;
+			border-radius: 2px;
+		}
+	}
+	.footer {
+		clear: both;
+	}
+	//Jump bar displayed on desktop--
+	.jumpbar {
+		display: block;
+	}
+	.jumpbar li{
+		display: block;
+	}
+	//--
+	//Mobile menu button hidden--
+	.menu-button {
+		display:none;
+	}
+	//--
+}
+@media screen and (min-width: 1500px) {
+
+	//Floating the hair dresser profiles in a line--
+	.hairdresser-container {
+		width:1398px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.hairdresser1 {
+		float: none;
+		margin: 0 2% 40px;
+		width: 280px;
+	}
+	.hairdresser2 {
+		float: none;
+		margin: 0 2% 40px;
+		width: 280px;
+	}
+	.hairdresser5 {
+		width: 280px;
+		margin: 0 2% 40px;
+		clear: none;
+		float: left;
+		p {
+			height: 192px;
+		}
+	}
+	.dresser4 {
+		clear: both;
+		float: left;
+	}
+	.dresser0 {
+		float: left;
+		padding: 0 0 20px; 
+	}
+	.profile-wrapper {
+		margin: 0 auto;
+		width: 960px;
+	}
+	.lower-profile-wrapper {
+		margin: 0 auto;
+		width: 615px;
+	}
+	.haircutting {
+		width: 1200px;
+		padding: 10px 40px 60px;
+		#tint-serv {
+			font-weight: 200;
+		}
+		h3 {
+			font-size: 2rem;
+			font-weight: 200;
+			text-align: center;
+		}
+	}
+	//--
+	//Increased widths on services and products box's to match profiles--
+	.products {
+		width: 1000px;
+		padding: 10px 140px 60px;
+		h3 {
+			font-size: 2rem;
+			font-weight: 200;
+		}
+	}
+	.treatment {
+		width: 70%;
+		margin: 0 94px 0 0;
+	}
+	.options {
+		width: 70%;
+		margin: 0 0 0 94px;
+	}
+	.tableright {
+		width: 40%;
+		margin: 0 40px 0 0;
+	}
+	.tableleft {
+		width: 40%;
+		margin: 0 0 0 40px
+	}
+	//--
+}
+
+@media screen and (max-height: 780px) {
+	.head-container {
+		background: url(../img/main-background.png) no-repeat center !important;
+		height: 780px;
+	}
+	.scroll {
+		display: none;
+	}
+	.logo {
+		position: absolute;
+		img {
+			margin: 50px auto 0;
+		}
+	}
+	.subhead {
+		position: absolute;
+	}
+	.navigation {
+	  position: absolute;
+	}
+	.headcontact {
+		position: absolute;
+	}
+	.head-address {
+		position: absolute;
+	}
+}
+
+@media screen and (max-height: 660px) {
+	.navigation {
+		display: none;
+	}
+}
