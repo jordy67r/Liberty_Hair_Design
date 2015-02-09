@@ -1682,3 +1682,54 @@ a[href^="http://maps.google.com/maps"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*FIX PRROPER*/
+.opentimes td {
+padding: 0 25px;
+height: 32px;
+}
+.navigation {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+  }
+
+  .navlist {
+    display: inline-block;
+    margin: 600px 0 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .navigation { display: none; }
+  }
+  .navlist li {
+    float: left;
+    padding: 15px 0;
+    width: 140px;
+    list-style: none;
+    background-color: #000;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .navlist li a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+  .navlist li a:hover {
+    color: #f6b900;
+  }
+  @media screen and (max-width: 1090px) and (min-width: 767px) {
+  .navlist {
+display: inline-block;
+margin: 520px 0 0;
+padding: 0;
+}
+@media screen and (min-width: 768px){
+#blurb p {
+width: 760px;
+margin: 0 auto;
+}
+}
